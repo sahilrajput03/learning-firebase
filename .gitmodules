@@ -1,3 +1,6 @@
 [submodule "friendlyeats-web"]
 	path = friendlyeats-web
 	url = https://github.com/firebase/friendlyeats-web.git
+[submodule "quickstart-js"]
+	path = quickstart-js
+	url = https://github.com/firebase/quickstart-js
