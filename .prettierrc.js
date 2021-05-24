@@ -15,7 +15,7 @@ module.exports = {
 	// ^^ This rule specify for jsx only.
 
 	bracketSpacing: false,
-	useTabs: true,
+	useTabs: false,
 
 	//  Php formatting options below -
 	braceStyle: '1tbs',
