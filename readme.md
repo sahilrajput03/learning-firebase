@@ -1,7 +1,5 @@
 # Readme
 
-Watch everything from fireship.io's content for firebase, and then rest only!!!
-
 Firebase official samples: https://firebase.google.com/docs/samples
 
 ## samples cloned
@@ -38,4 +36,70 @@ https://firebase.google.com/docs/web/setup (All web and node docs here for fireb
 
 https://console.firebase.google.com/u/0/
 
+## Fireship.io
 
+Watch everything from fireship.io's content for firebase, and then rest only!!!
+
+Firebase is BaaS: Backend-as-a-Service
+
+The best code is no code at all. Jeff Atwood
+
+Firebase is an extension of "Google Cloud Platform" (GCP).
+
+Firebase is SDK for frontend app.
+
+A firebase project(i.e, cool-proj1) can have multiple web apps.
+
+Firebase cdn links source: (🤠︎the link is there in the generated script tags too)
+https://firebase.google.com/docs/web/learn-more?authuser=0#add-sdks-cdn
+
+You need to run below command to configure firebase in a project
+
+firebase init
+
+Choose feautres: Hosting and Emulators (from the list: Database, Firestore, Functions, Hosting, Storag, Emulators, Remote Config).
+
+WATCH VIDEO FROM FIRESHIP.IO for EMULATOR(emulators is just simulation of firebase services locally on our system, and that means we can run database records and cloud functions on our system without connecting to google cloud ). ADVANCE EMULATOR TECHNIQUES.
+
+Firebase init adds secret to your github repo if you select autmatic deployment:
+FIREBASE_SERVICE_ACCOUNT_COOL_PROJ1.
+
+For emulator setup: Choose the ``hosting`` option.
+
+I choose emulator port to be 5005(default is use any available) and to install the emulator now(default is no).
+
+### Rewriting routes in firebase.json file
+
+Use rewrites property inside the hosting key in ``firebase.json`` to configure any redirects you want!!
+
+e.g., 
+
+```
+"rewrites": [
+	{
+		"source": "**",
+		"destination": "/index.html"
+	}
+]
+```
+
+### Starting the app
+
+`firebase server` or `firebase emulators:start`
+
+### Deployment
+
+Use `firebase deploy` to deploy your app but IMO the app will be automatically deployed when you push a commit to github as I configured the ci with firebase as well.
+
+## Learn about web and firebase
+
+https://firebase.google.com/docs/web/learn-more?authuser=0#modular-version
+
+
+### Adding firebase to your js project official guide
+
+https://firebase.google.com/docs/web/setup
+
+### Firebase JavaScript SDK Reference
+
+https://firebase.google.com/docs/reference/js/?authuser=0
