@@ -1,0 +1,3 @@
+[submodule "friendlyeats-web"]
+	path = friendlyeats-web
+	url = https://github.com/firebase/friendlyeats-web.git
