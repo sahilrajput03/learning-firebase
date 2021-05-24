@@ -4,3 +4,6 @@
 [submodule "quickstart-js"]
 	path = quickstart-js
 	url = https://github.com/firebase/quickstart-js
+[submodule "my-webapp1"]
+	path = my-webapp1
+	url = git@github.com:sahilrajput03/my-webapp1.git
